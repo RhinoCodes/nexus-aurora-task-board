@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Nexus Aurora Task Board</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js">
+
+	</script>
+	<script src="https://kit.fontawesome.com/4ac19199ce.js" crossorigin="anonymous">
+
+	</script>
+	</script>
+</head>
+
+<body>
+	<div class="transition duration-200 ease-in-out flex flex-row shadow p-2">
+		<p class="mr-auto">Nexus Aurora Task Board</p>
+		<div id="signin" onclick="signInWithDiscord()" class="transistion duration-200 ease-in-out p-2 cursor-pointer hover:bg-gray-100 inline-block shadow rounded cursor-pointer">
+			<i style="color: #5865F2" class="fab fa-discord float-left mt-1 mr-2"></i>
+      <p class="float-left">Sign In With Discord</p>
+    </div>
+  </div>
+  <div id="createTask" class="hidden p-2 m-2 shadow rounded inline-block">
+    <h1 class="text-xl">Create Task</h1>
+    <form id="taskCreationForm" onSubmit="createTask();"> 
+      <input id="title" class="transition duration-200 ease-in-out focus:shadow-lg outline-none mb-2 p-1 rounded shadow" type="text" placeholder="Title" required><br>
+      <input id="skillsNeeded" class="transition duration-200 ease-in-out w-4/5 focus:shadow-lg outline-none mb-2 p-1 rounded shadow" type="text" placeholder="Skills Needed" required><br>
+      <div class="rounded shadow p-1 mb-2 inline-block">Deadline: <input class="outline-none bg-none cursor-pointer" id="datepicker" type="date"></div><br>
+      <textarea id="description" placeholder="Description" class="transition duration-200 ease-in-out focus:shadow-lg outline-none p-1 mb-2 shadow rounded resize-none" required></textarea><br>
+      <input type="submit" value = "Create Task" class="transition duration-200 ease-in-out p-2 shadow rounded bg-white hover:bg-gray-100" >
+    </form>
+  </div>
+  <div class="float-right shadow rounded p-2 h-screen">
+    <h1 class='text-xl'>Current Tasks</h1>
+  </div> 
+	<script src="script.js">
+		
+      
+	</script>
+</body>
+
+</html>
