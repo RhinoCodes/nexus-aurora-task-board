@@ -36,10 +36,10 @@
     </form>
   </div>
   </div>
-  <div class="transition duration-500 ease-in-out p-2 hidden rounded shadow inline-block" id="feedback" netlify>
-    <form name="feedback">
+  <div class="transition duration-500 ease-in-out p-2 hidden rounded shadow inline-block" id="feedback">
+    <form name="feedback" method="POST" data-netlify="true">
     <p>Please give us your feedback!<p>
-    <textarea name="textfeedback" class="outline-none rounded shadow resize-none"></textarea><br>
+    <textarea name="textfeedback" class="p-1 outline-none rounded shadow resize-none"></textarea><br>
     <input value="Submit" type="submit" class="transition mt-2 p-2 duration-200 ease-in-out bg-none outline-none hover:bg-gray-100 shadow rounded bg-transparent">
     <input type="text" name="Discord Name" id="discord" class="hidden"></input>
   </form>
