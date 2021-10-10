@@ -6,8 +6,8 @@ function handleForm(event) { event.preventDefault(); }
 form.addEventListener('submit', handleForm);
 
 var form = document.getElementsByName("feedback")[0];
-function handleForm(event) { event.preventDefault(); feedbackfunc() }
-form.addEventListener('submit', handleForm);
+function handleFormX(event) { feedbackfunc() }
+form.addEventListener('submit', handleFormX);
 
 
 let blurred=false;
